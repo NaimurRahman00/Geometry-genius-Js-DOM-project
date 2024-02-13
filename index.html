@@ -40,7 +40,7 @@
         </div>
         <div class="navbar-center hidden lg:flex"></div>
         <div class="navbar-end">
-          <a class="btn bg-blue-500 text-white text-xl px-5 mr-3 md:mr-10">Blog</a>
+          <a class="btn bg-blue-500 text-white text-xl px-8 mr-3 md:mr-10">Blog</a>
         </div>
       </div>
     </header>
@@ -57,12 +57,12 @@
               <h2 class="card-title font-bold text-2xl">Triangle</h2>
               <p>Area (A) = 0.5 X <span>b</span> X <span>h</span></p>
               <div class="py-4">
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="Base">
+                <input type="number" name="" id="tri-base" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="Base">
                 <span> cm</span>
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="height">
+                <input type="number" name="" id="tri-height" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="height">
                 <span> cm</span>
               </div>
-              <button class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
+              <button onclick="triArea()" class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
             </div>
           </div>
           <!-- Card 2 -->
@@ -74,12 +74,12 @@
               <h2 class="card-title font-bold text-2xl">Rectangle</h2>
               <p>Area (A) = <span>W</span> X <span>l</span></p>
               <div class="py-4">
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="width">
+                <input type="number" name="" id="rec-width" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="width">
                 <span> cm</span>
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="length">
+                <input type="number" name="" id="rec-length" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="length">
                 <span> cm</span>
               </div>
-              <button class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
+              <button onclick="recArea()" class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
             </div>
           </div>
           <!-- Card 3 -->
@@ -91,12 +91,12 @@
               <h2 class="card-title font-bold text-2xl">Parallelogram</h2>
               <p>Area (A) = <span>b</span> X <span>h</span></p>
               <div class="py-4">
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="Base">
+                <input type="number" name="" id="pera-base" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="Base">
                 <span> cm</span>
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="height">
+                <input type="number" name="" id="pera-height" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="height">
                 <span> cm</span>
               </div>
-              <button class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
+              <button onclick="peraArea()" class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
             </div>
           </div>
           <!-- Card 4 -->
@@ -108,12 +108,12 @@
               <h2 class="card-title font-bold text-2xl">Rhombus</h2>
               <p>Area (A) = 0.5 X <span>d<sub>1</sub></span> X <span>d<sub>2</sub></span></p>
               <div class="py-4">
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="d1">
+                <input type="number" name="" id="rhom-d1" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="d1">
                 <span> cm</span>
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="d2">
+                <input type="number" name="" id="rhom-d2" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="d2">
                 <span> cm</span>
               </div>
-              <button class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
+              <button onclick="rhomArea()" class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
             </div>
           </div>
           <!-- Card 5 -->
@@ -125,12 +125,12 @@
               <h2 class="card-title font-bold text-2xl">Pentagon</h2>
               <p>Area (A) = 0.5 x <span>p</span> x <span>a</span></p>
               <div class="py-4">
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="Perimeter">
+                <input type="number" name="" id="pent-peri" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="Perimeter">
                 <span> cm</span>
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="Apothem">
+                <input type="number" name="" id="pent-apo" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="Apothem">
                 <span> cm</span>
               </div>
-              <button class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
+              <button onclick="pentArea()" class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
             </div>
           </div>
           <!-- Card 6 -->
@@ -142,18 +142,20 @@
               <h2 class="card-title font-bold text-2xl">Ellipse</h2>
               <p>Area (A) = πab</p>
               <div class="py-4">
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="A axis">
+                <input type="number" name="" id="ellipse-a" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="A axis">
                 <span> cm</span>
-                <input type="number" name="" id="" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="B axis">
+                <input type="number" name="" id="ellipse-b" class="w-24 bg-slate-200 px-4 py-1 rounded-sm" placeholder="B axis">
                 <span> cm</span>
               </div>
-              <button class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
+              <button onclick="ellipseArea()" class="btn btn-primary w-full bg-blue-500 border-0 text-xl font-bold text-white">Calculate</button>
             </div>
           </div>
         </div>
         <!-- Show result -->
         <div class="md:w-1/4 min-h-52 card bg-base-100 shadow-xl">
-          <h4 class="underline text-center font-bold text-gray-800 mt-6">Area Calculation</h4>
+          <h4 class="underline text-center font-bold text-gray-800 mt-6 sticky top-0">Area Calculation</h4>
+          <ol id="result-container" class="ml-10 mt-8 list-decimal sticky top-12">
+          </ol>
         </div>
       </section>
     </main>
