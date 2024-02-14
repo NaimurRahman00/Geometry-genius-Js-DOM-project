@@ -19,6 +19,8 @@ function triArea() {
     resultContainer.append(result);
     console.log(resultValue);
 
+    triBase.value = "";
+    triHeight.value = "";
 }
 // For Rectangle
 function recArea() {
@@ -39,6 +41,8 @@ function recArea() {
     resultContainer.append(result);
     console.log(resultValue);
 
+    recWidth.value = "";
+    recLength.value = "";
 }
 // For Perallelogram
 function peraArea() {
@@ -59,6 +63,9 @@ function peraArea() {
     resultContainer.append(result);
     console.log(resultValue);
 
+    peraBase.value = "";
+    peraHeight.value = "";
+
 }
 // For Rhombos
 function rhomArea() {
@@ -76,6 +83,9 @@ function rhomArea() {
     const result = document.createElement('li');
     const resultValue = result.innerHTML = `Rhombos Area: ${areaValue}`;
     resultContainer.append(result);
+
+    rhomD1.value = "";
+    rhomD2.value = "";
 }
 // For Pentagon
 function pentArea() {
@@ -93,6 +103,9 @@ function pentArea() {
     const result = document.createElement('li');
     const resultValue = result.innerHTML = `Pentagon Area: ${areaValue}`;
     resultContainer.append(result);
+
+    pentPei.value = "";
+    pentApo.value = "";
 }
 // For Ellipse
 function ellipseArea() {
@@ -110,6 +123,9 @@ function ellipseArea() {
     const result = document.createElement('li');
     const resultValue = result.innerHTML = `Ellipse Area: ${areaValue}`;
     resultContainer.append(result);
+
+    ellipseA.value = "";
+    ellipseB.value = "";
 }
 
 
